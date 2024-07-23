@@ -1,51 +1,22 @@
-import { View, Text, ScrollView } from 'react-native'
-import React from 'react'
+import {View, Text, Button} from 'react-native';
+import React from 'react';
 
 const App = () => {
+  let data = 10;
+
+  const fruit = (val) => {
+    console.log(data);
+  };
   return (
     <View>
-      <ScrollView>
-      <Text style={{fontSize:30}}>Hello react native</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      <Text style={{fontSize:30}}>like,share and subscribe</Text>
-      </ScrollView>
-      
+      <Text style={{fontSize:30,alignSelf:'center',color:'green'}}>Hello components</Text>
+      <Button
+        title="On press"
+        color={'red'}
+        onPress={() => fruit('Long')}></Button>
+      <Button title="On press" color={'green'} onPress={fruit}></Button>
     </View>
-  )
-}
+  );
+};
 
-export default App
+export default App;
