@@ -1,22 +1,16 @@
-import {View, Text, Button} from 'react-native';
-import React from 'react';
+import { View, Text } from 'react-native'
+import React from 'react'
+import States from './src/States'
+import ParenentProp from './src/ParenentProp'
+
 
 const App = () => {
-  let data = 10;
-
-  const fruit = (val) => {
-    console.log(data);
-  };
   return (
     <View>
-      <Text style={{fontSize:30,alignSelf:'center',color:'green'}}>Hello components</Text>
-      <Button
-        title="On press"
-        color={'red'}
-        onPress={() => fruit('Long')}></Button>
-      <Button title="On press" color={'green'} onPress={fruit}></Button>
+      <States />
+      <ParenentProp />
     </View>
-  );
-};
+  )
+}
 
-export default App;
+export default App
