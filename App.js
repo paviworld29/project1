@@ -8,11 +8,13 @@ import StaticGrid from './src/StaticGrid';
 import DynamicGrid from './src/DynamicGrid';
 import ComponentWithLoop from './src/ComponentWithLoop';
 import Sectionlis from './src/Sectionlis';
+import Useeffec from './src/Useeffec';
+import Toggle from './src/Toggle';
 
 const App = () => {
   return (
     <View>
-      <Sectionlis />
+      <Toggle />
     </View>
   );
 };
