@@ -1,22 +1,19 @@
-import {View} from 'react-native';
 import React from 'react';
-import States from './src/States';
-import ParenentProp from './src/ParenentProp';
-import Foam from './src/Foam';
-import FlastlistDemo from './src/FlastlistDemo';
-import StaticGrid from './src/StaticGrid';
-import DynamicGrid from './src/DynamicGrid';
-import ComponentWithLoop from './src/ComponentWithLoop';
-import Sectionlis from './src/Sectionlis';
-import Useeffec from './src/Useeffec';
-import Toggle from './src/Toggle';
+import { SafeAreaView, StyleSheet } from 'react-native';
+import TouchableHighlightExample from './src/Touchbalehighlight';
 
 const App = () => {
   return (
-    <View>
-      <Toggle />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <TouchableHighlightExample />
+    </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 
 export default App;

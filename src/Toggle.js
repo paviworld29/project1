@@ -14,14 +14,14 @@ const Toggle = () => {
 };
 
 const User = () => {
-   let timer= setInterval(() => {
-        console.warn('interval')
-    }, 2000);
-    useEffect(() => {
-        return()=>{
-            clearInterval(timer)
-        }
-      });
+  let timer = setInterval(() => {
+    console.warn('interval');
+  }, 9000);
+  useEffect(() => {
+    return () => {
+      clearInterval(timer);
+    };
+  });
   return (
     <View>
       <Text>user components</Text>
